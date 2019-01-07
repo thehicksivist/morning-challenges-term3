@@ -15,6 +15,35 @@ Examples:
 
 const equalValues = (value1, value2) => {
     // Your code below
+
+    return JSON.stringify(value1) == JSON.stringify(value2)
+
+    // create a separate function for "check", which returns true or false on a check,
+    // so at any point in any iteration it will return false
+    let check = function(num1, num2) {
+        if (num1 != num2) {
+            return false
+        }
+    }
+
+    if (typeof value1 === 'object' && yourVariable !== null) {
+        // case object
+    } else if (value1.constructor == Array) {
+        // case array
+    } else {
+        return false
+    }
+
+     // if array, loop and check each value 
+    // if not array, check and move to next key
+
+    // loop checks
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        check(element, array2[i])
+        
+    }
+    
 }
 
 const assert = require('assert')

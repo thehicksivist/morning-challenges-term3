@@ -31,6 +31,7 @@ Check your solutions with mocha 16_supermarket.js
 
 function queueTime(customers, n) {
     // Your code here
+    
 };
 
 const assert = require('assert');
